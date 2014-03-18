@@ -1189,6 +1189,7 @@ html.no-touch nav ul li:hover {
     padding: 28px;
     color: black;
     text-decoration: none;
+    font-family: 'Cabin Sketch', cursive;
 }
 #sun {
     background: url("../img/sun_3.png") center no-repeat;

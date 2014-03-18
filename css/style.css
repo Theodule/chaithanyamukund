@@ -85,6 +85,24 @@ body {
 	/*background-repeat: no-repeat;*/
 }
 
+.cust-cloud1 a {
+	font-size: 20px;
+    z-index: 9;
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    padding: 28px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.cust-cloud1:hover, .cust-cloud1:hover:after, .cust-cloud1:hover:before {
+    background: #5AD185;
+    cursor: pointer;
+    color: #fff;
+}
+
 .cust-cloud:before, .cust-cloud1:before{
 	content: '';
 	width:80px;

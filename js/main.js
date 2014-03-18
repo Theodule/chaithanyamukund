@@ -157,7 +157,7 @@ $(document).ready(function() {
     {top: "4999", offset: "-430px", css_class: "cloud-1", delay: 1.4},
     {top: "5445", offset: "330px", css_class: "cloud-2", delay: .8},
     {top: "5629", offset: "-430px", css_class: "cloud-4", delay: .5},
-    {top: "5550", offset: "-570px", css_class: "cloud-2", delay: .1}
+    {top: "5550", offset: "-570px", css_class: "cloud-2 md-trigger", delay: .1, link: "Venue", attr: true}
   ];
 
   var zoneControllers = {
@@ -201,6 +201,11 @@ $(document).ready(function() {
       if (cloud.link) {
         $cloud.html($("<a>").attr('href', cloud.href).text(cloud.link));
       }
+
+      if (cloud.link) {
+        $cloud.attr('data-modal', 'modal-4');
+      }
+
       $("body").append($cloud);
 
       $(window).scroll(function() {
