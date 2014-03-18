@@ -25,7 +25,7 @@ perspective effects (not including the modals and the overlay).
 
 .md-modal {
 	position: fixed;
-	top: 40%;
+	top: 49%;
 	left: 50%;
 	max-width: 900px;
 	min-width: 320px;
@@ -34,6 +34,8 @@ perspective effects (not including the modals and the overlay).
 	height: auto;
 	z-index: 2000;
 	visibility: hidden;
+	max-height: 600px;
+	overflow: scroll;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
