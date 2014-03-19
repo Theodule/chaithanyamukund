@@ -535,7 +535,7 @@ html.no-touch nav ul li:hover {
     font-weight: 200;
 }
 
-#the-meeting .text p { font-family: 'Bad Script', cursive;color: #696969; }
+#the-meeting .text p { font-family: 'Bad Script', cursive;color: #696969;font-size: 22px; }
 
 #the-meeting .mukund .text {
     left: -241px;
