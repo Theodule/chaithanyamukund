@@ -12,6 +12,19 @@ var animationMethods = {
             }
         }
     },
+    cloudInFromTheSide: function (callback) {
+        return function () {
+            if ($(this).hasClass('right')) {
+                $(this).animate({
+                    "margin-right": '0px'
+                }, 900, callback);
+            } else if ($(this).hasClass('left')) {
+                $(this).animate({
+                    "margin-left": '0px'
+                }, 900, callback);
+            }
+        }
+    },
     slideBackToTheSide: function (callback) {
         return function () {
             if ($(this).hasClass('right')) {
@@ -86,10 +99,10 @@ var StormZone = function ($element) {
     var $text = $element.find("p");
 
     this.moveIn = function () {
-        $dominant_cloud.each(animationMethods.slideInFromTheSide(function () {
-            $lightning.show(1000);
+        $dominant_cloud.each(animationMethods.cloudInFromTheSide(function () {
+            $lightning.show();
         }));
-        $([$left_cloud, $right_cloud]).each(animationMethods.slideInFromTheSide());
+        $([$left_cloud, $right_cloud]).each(animationMethods.cloudInFromTheSide());
         $text.each(animationMethods.slideInFromTheSide());
         $element.each(animationMethods.selectNavItem);
     }
